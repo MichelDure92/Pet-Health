@@ -1,132 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-family: 'poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
 }
 
 .primeiro-bloco {
-    height: 600px;
-    width: 100vw;
-    background: #ade2ff;
-    display: flex;
+  height: 600px;
+  width: 100vw;
+
+  background: #ade2ff;
+
+  display: flex;
 }
+
 .lado-esquerdo {
-    
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .cachorro-imagem {
-    height: 600px;
-    width: 400px;
+  width: 400px;
+  height: 600px;
 }
 
 .menu {
+  height: 56px;
 
-    height: 56px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 128px;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 128px;
+  font-size: 16px;
 }
 
 .menu-item {
-    color: white;
-    font-weight: 600;
+  color: white;
+  font-weight: 600;
 }
 
 .textos {
-    height: calc(100% - 56px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
+  height: calc(100% - 56px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 32px;
 }
 
 .texto-principal {
-
-font-size: 48px;
-width: 450px;
-color: white;
-
+  font-size: 48px;
+  width: 450px;
+  color: white;
 }
 
 .texto-clicavel {
-font-size: 56px;
-color: #758ecd;
+  font-size: 56px;
+  color: #758ecd;
 }
 
 .segundo-bloco {
-    height: 600px;
-    width: 100vw;
+  height: 600px;
+  width: 100vw;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .plano-container {
-    width: 350px;
+  width: 350px;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    gap: 16px;
-
+  gap: 16px;
 }
 
 .animal-imagem {
-    height: 150px;
+  height: 150px;
 }
 
-.animal-imagem {
-    font-size: 36px;
-    color: #70cdff;
+.animal-titulo {
+  font-size: 36px;
+  color: #70cdff;
 }
 
 .plano-texto {
-    font-size: 20px;
-    line-height: 36px;
-    width: 224px;
-    color: #c4c4c4;
+  font-size: 20px;
+  line-height: 36px;
+  width: 224px;
+  color: #c4c4c4;
 }
+
+.terceiro-bloco {
+  height: 600px;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ade2ff;
+}
+
+.preco-container {
+  height: 500px;
+  width: 350px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+
+  color: white;
+}
+
+.preco-titulo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.preco-grupo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.preco {
+  font-size: 44px;
+}
+
+.preco-info {
+  font-size: 16px;
+}
+
+.plano-detalhe-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:8px;
+}
+
+.plano-detalhe {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.plano-detalhe-imagem {
+  height: 20px;
+}
+
+
+.plano-detalhe-texto {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+
+
 
 @media (max-width: 1000px) {
-
-    .primeiro-bloco {
+  .primeiro-bloco {
     height: 500px;
-}
+  }
 
-.cachorro-imagem {
+  .cachorro-imagem {
     display: none;
-}
+  }
 
-.menu {
+  .menu {
     gap: 32px;
-}
+  }
 
-.texto-principal {
-   font-size: 30px;
-   width: 90vw;
-}
+  .texto-principal {
+    font-size: 30px;
+    width: 400px;
+  }
 
-.texto-clicavel {
+  .texto-clicavel {
     font-size: 40px;
-}
+  }
 
-.segundo-bloco {
+  .segundo-bloco {
     flex-direction: column;
     height: auto;
     gap: 32px;
     padding-top: 40px;
     padding-bottom: 40px;
-}
+  }
 
+  .terceiro-bloco {
+    flex-direction: column;
+    height: auto;
+  }
 }
